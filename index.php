@@ -13,6 +13,8 @@
 		
 		<!--Latest compiled and minified CSS-->
 		<link rel="stylesheet" href="css/bootstrap.css">
+		<!--custom css-->
+		<link rel="stylesheet" href="css/style.css">
 
 		<!--Latest compiled and minified JavaScript-->
 		<script src="js/bootstrap.js"></script>
@@ -25,7 +27,7 @@
 	<body>
 	
 		<!--Navbar start-->
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-custom">
 			<div class="container-fluid">
 				<!--header-->
 				<div class="navbar-header">
@@ -53,6 +55,57 @@
 			</div>
 		</nav>
 		<!--Navbar end-->
+		
+		<!--header start-->
+		<header>
+			<div class="text-center">
+				<h1>YouTube 2.0</h1>
+				<p class="lead">Simply text, asdsad sadasdas</p>
+			</div>
+		</header>
+		<!--header end-->
+		
+		<!--post area start-->
+		<div class="container-fluid">
+			<div class="col-md-8">
+				<div class="post">
+					<h1>The First Post</h1>
+					
+					<div class="meta small-text"><a href="#">06-06-2017</a> | <a href="#">Pawel Urbanczyk</a> | <a href="#">Technology</a></div>
+					
+					<p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+					<a class="label label-default">What is Technology?</a>
+					<a class="label label-default">How technology works?</a>
+					<a class="label label-default">Intro into the technology</a>
+				</div>
+				
+				<div class="post">
+					<h1>The Second Post</h1>
+					
+					<div class="meta small-text"><a href="#">06-06-2017</a> | <a href="#">Pawel Urbanczyk</a> | <a href="#">Technology</a></div>
+					
+					<p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+					<a class="label label-default">What is Technology?</a>
+					<a class="label label-default">How technology works?</a>
+					<a class="label label-default">Intro into the technology</a>
+				</div>
+				
+				<div class="post">
+					<h1>The Third Post</h1>
+					
+					<div class="meta small-text"><a href="#">06-06-2017</a> | <a href="#">Pawel Urbanczyk</a> | <a href="#">Technology</a></div>
+					
+					<p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+					<a class="label label-default">What is Technology?</a>
+					<a class="label label-default">How technology works?</a>
+					<a class="label label-default">Intro into the technology</a>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+			</div>
+		</div>
+		<!--post area end-->
 		
 	</body>
 </html>
