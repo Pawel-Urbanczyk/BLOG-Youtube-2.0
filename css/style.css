@@ -12,21 +12,40 @@ header{
 	color: white;
 }
 
-.navbar a {
+.navbar-custom a {
 	color: white;
 	font-weight: bold;
 }
 
-.navbar li a{
+.navbar-custom li a{
 	font-size: 18px;
 	padding-left: 30px; 
 	padding-right: 30px; 
+	transition: .5s background-color;
 }
 
-.navbar li a:hover{
+.navbar-custom li a:hover{
 	background:brown;
 	
 }
+
+.navbar-sub{
+	
+}
+
+.navbar-sub a{
+	color:gray;
+	font-size: 16px;
+}
+
+.navbar-sub li a{
+	transition: .5s background-color;
+	margin: 0 10px;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+
 
 .post{
 	border-bottom: 2px solid black;

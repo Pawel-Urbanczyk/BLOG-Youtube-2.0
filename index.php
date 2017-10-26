@@ -35,7 +35,7 @@
 				</div>
 				
 				<!--search area-->
-				<div class="form-inline nav navbar-nav navbar-right" style="padding: 10px;">
+				<div class="form-inline navbar-nav navbar-right" style="padding: 10px;">
 					<div class="input-group">
 						<input type="search" class="form-control" placeholder="Search something...">
 						
@@ -67,6 +67,17 @@
 		
 		<!--post area start-->
 		<div class="container-fluid">
+			<div class="col-md-12">
+				<nav class='navbar navbar-sub'>
+					<ul class='nav navbar-nav'>
+						<li><a href='#'>Technology</a></li>
+						<li><a href='#'>Science</a></li>
+						<li><a href='#'>Cooking</a></li>
+						<li><a href='#'>Socialism</a></li>
+					</ul>
+				</nav>
+			</div>
+		
 			<div class="col-md-8">
 				<div class="post">
 					<h1>The First Post</h1>
