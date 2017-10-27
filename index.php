@@ -138,10 +138,32 @@
 					<a href='#' class="label label-default">How technology works</a>
 					<a href='#' class="label label-default">Intro to Technology</a>
 				</div>
+				
+				<!--About me-->
+				<div class="page-header">
+					<h2>About Pawel Urbanczyk</h2>
+				</div>
+				
+				<!--picture-->
+				<div class="col-md-4">
+					<img src='images/me.png' class='img-responsive'>
+				</div>
+				
+				<!--Data-->
+				<div class="col-md-8">
+					<a href='#' class="lead">Website address</a><br>
+					<a href='#' class="lead">Official Email</a><br>
+					<a href='#' class="lead">Profile page</a><br>
+				</div>
 			</div>
 			<!--Sidebar right end-->
 		</div>
 		<!--post area end-->
 		
+		<!--footer-->
+		<div class="padding-65"></div>
+		<div class="navbar navbar-inverse navbar-fixed-bottom">
+			<p class="text-center footer">Copyright &copy; Pawel Urbanczyk 2017</p>
+		</div>
 	</body>
 </html>

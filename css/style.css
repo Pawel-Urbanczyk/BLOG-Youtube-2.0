@@ -1,3 +1,7 @@
+.padding-65{
+	padding: 65px;
+}
+
 .navbar-custom{
 	postition: absolute;
 	top: 0px;
@@ -25,7 +29,7 @@ header{
 }
 
 .navbar-custom li a:hover{
-	background:brown;
+	background: brown;
 	
 }
 
@@ -70,6 +74,7 @@ header{
 	display: block;
 	padding: 15px;
 	color: maroon;
+	transition: .5s background, .5s color;
 	
 }
 
@@ -86,4 +91,9 @@ header{
 
 .day-post .label{
 	line-height: 22px;
+}
+
+.footer{
+	color: white;
+	margin: 20px;
 }
