@@ -107,14 +107,39 @@
 					<div class="meta small-text"><a href="#">06-06-2017</a> | <a href="#">Pawel Urbanczyk</a> | <a href="#">Technology</a></div>
 					
 					<p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-					<a class="label label-default">What is Technology?</a>
-					<a class="label label-default">How technology works?</a>
-					<a class="label label-default">Intro into the technology</a>
+					<a href='#' class="label label-default">What is Technology?</a>
+					<a href='#' class="label label-default">How technology works?</a>
+					<a href='#' class="label label-default">Intro into the technology</a>
 				</div>
 			</div>
 			
+			<!--Sidebar right start-->
 			<div class="col-md-4">
+			<!--header-->
+				<div class="page-header">
+					<h2>Latest post</h2>
+				</div>
+			<!--Lates post-->
+				<div class="custom-sidebar-list">
+						<a href="#" class="custom-sidebar-list-item">First post</a>
+						<a href="#" class="custom-sidebar-list-item">Second post</a>
+						<a href="#" class="custom-sidebar-list-item">Third post</a>
+				</div>
+				
+				<div class="page-header">
+					<h2>Post of the Day</h2>
+				</div>
+				
+				<div class="day-post">
+					<h3>The Second Post</h3>
+					<div class="meta small-text"><a href='#'>06-06-2017</a> | <a href='#'>Technology</a> | <a href='#'>Pawel Urbanczyk</a></div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<a href='#' class="label label-default">What is Technology</a>
+					<a href='#' class="label label-default">How technology works</a>
+					<a href='#' class="label label-default">Intro to Technology</a>
+				</div>
 			</div>
+			<!--Sidebar right end-->
 		</div>
 		<!--post area end-->
 		

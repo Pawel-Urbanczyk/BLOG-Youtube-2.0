@@ -60,3 +60,30 @@ header{
 .meta a{
 	color: gray;
 }
+
+.custom-sidebar-list{
+
+}
+
+.custom-sidebar-list-item{
+	border-bottom: 1px solid brown;
+	display: block;
+	padding: 15px;
+	color: maroon;
+	
+}
+
+.custom-sidebar-list-item:hover{
+	text-decoration: none;
+	background: maroon;
+	color: white;
+}
+
+.day-post{
+	border: 2px solid black;
+	padding: 10px;
+}
+
+.day-post .label{
+	line-height: 22px;
+}
