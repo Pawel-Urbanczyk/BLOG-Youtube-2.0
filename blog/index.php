@@ -9,7 +9,7 @@
 	<!--Bootstrap links start-->
 	
 		<!--jQuery-->
-		<script	src="js/jquery.js"></script>
+		<script	src="../js/jquery.js"></script>
 		
 		<!--Latest compiled and minified CSS-->
 		<link rel="stylesheet" href="../css/bootstrap.css">

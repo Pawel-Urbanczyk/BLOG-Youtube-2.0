@@ -1,5 +1,5 @@
 <!--Navbar start-->
-		<nav class="navbar navbar-custom">
+		<nav class="navbar navbar-custom" style='width: 100%; height: 65px; background: orange;'>
 			<div class="container-fluid">
 				<!--header-->
 				<div class="navbar-header">
