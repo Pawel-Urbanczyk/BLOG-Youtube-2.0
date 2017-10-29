@@ -115,3 +115,15 @@ header{
 .second-bar li a:hover{
 	background: white;
 }
+.vid-sidebar-list{}
+.vid-sidebar-list-item{
+	display: block;
+	color: #0f74bc;
+	font-weight: bold;
+	padding: 8px;
+}
+.vid-sidebar-list-item:hover{
+	background: #0f74bc;
+	color: white;
+	text-decoration: none;
+}
