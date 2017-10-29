@@ -27,8 +27,21 @@
 		
 	</head>
 	<body>
+	<!--Navbar start-->
 		<?php include '../includes/nav.php';?>
+	<!--Navbar end-->
 	
+	<!--second navbar start-->
+	<nav class='navbar second-bar'>
+		<div class='container'>
+			<ul class='nav navbar-nav navbar-right'>
+				<li><a href='#'>Upload</a></li>
+				<li><a href='#'>Sign In</a></li>
+				<li><a href='#'>Join</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!--second navbar end-->
 	
 	</body>
 </html>

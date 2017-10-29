@@ -105,3 +105,13 @@ header{
 .main-nav{
 	background: orange;
 }
+.second-bar{
+	background: silver;
+	
+}
+.second-bar li a{
+	color: #eeeeee;
+}
+.second-bar li a:hover{
+	background: white;
+}

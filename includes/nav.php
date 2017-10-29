@@ -1,5 +1,5 @@
 <!--Navbar start-->
-		<nav class="navbar navbar-custom" style='width: 100%; height: 65px; background: orange;'>
+		<nav class="navbar navbar-custom" style='width: 100%; height: 52px; background-image: url(../images/header2.jpg); background-position: center;'>
 			<div class="container-fluid">
 				<!--header-->
 				<div class="navbar-header">
