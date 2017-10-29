@@ -15,6 +15,8 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<!--custom css-->
 		<link rel="stylesheet" href="css/style.css">
+		<!--font awesome-->
+		<link rel="stylesheet" href="css/font-awesome.css">
 
 		<!--Latest compiled and minified JavaScript-->
 		<script src="js/bootstrap.js"></script>

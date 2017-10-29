@@ -15,6 +15,8 @@
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<!--custom css-->
 		<link rel="stylesheet" href="css/style.css">
+		<!--font awesome-->
+		<link rel="stylesheet" href="css/font-awesome.css">
 
 		<!--Latest compiled and minified JavaScript-->
 		<script src="js/bootstrap.js"></script>
@@ -115,20 +117,23 @@
 			
 			<!--Sidebar right start-->
 			<div class="col-md-4">
-			<!--header-->
-				<div class="page-header">
-					<h2>Latest post</h2>
-				</div>
-			<!--Lates post-->
-				<div class="custom-sidebar-list">
-						<a href="#" class="custom-sidebar-list-item">First post</a>
-						<a href="#" class="custom-sidebar-list-item">Second post</a>
-						<a href="#" class="custom-sidebar-list-item">Third post</a>
-				</div>
-				
-				<div class="page-header">
-					<h2>Post of the Day</h2>
-				</div>
+			<div class='row'>
+						<!--header-->
+					<div class="page-header">
+						<h2>Latest post</h2>
+					</div>
+					<!--Lates post-->
+					<div class="custom-sidebar-list">
+							<a href="post.php" class="custom-sidebar-list-item">First post</a>
+							<a href="post.php" class="custom-sidebar-list-item">Second post</a>
+							<a href="post.php" class="custom-sidebar-list-item">Third post</a>
+					</div>
+					
+			</div>
+			<div class='row'>
+					<div class="page-header">
+						<h2>Post of the Day</h2>
+					</div>
 				
 				<div class="day-post">
 					<h3>The Second Post</h3>
@@ -139,21 +144,43 @@
 					<a href='#' class="label label-default">Intro to Technology</a>
 				</div>
 				
+			</div>
+			
 				<!--About me-->
-				<div class="page-header">
-					<h2>About Pawel Urbanczyk</h2>
+				<div class='row'>
+						<div class="page-header">
+							<h2>About Pawel Urbanczyk</h2>
+						</div>
+						
+						<!--picture-->
+						<div class="col-md-4">
+							<img src='images/me.png' class='img-responsive'>
+						</div>
+						
+						<!--Data-->
+						<div class="col-md-8">
+							<a href='#' class="lead">Profile page</a><br>
+							<a href='#' class="lead">Website address</a><br>
+							<a href='#' class="lead">Official Email</a><br>
+						</div>
 				</div>
-				
-				<!--picture-->
-				<div class="col-md-4">
-					<img src='images/me.png' class='img-responsive'>
-				</div>
-				
-				<!--Data-->
-				<div class="col-md-8">
-					<a href='#' class="lead">Profile page</a><br>
-					<a href='#' class="lead">Website address</a><br>
-					<a href='#' class="lead">Official Email</a><br>
+				<div class="row">
+					<!--social start-->
+					<div class="page-header">
+						<h2>Social Links</h2>
+						
+					</div>
+					<div class='text-center'>
+						<a href='#'><i style='color: #3b5998;' class='fa fa-facebook-official fa-4x'></i></a>
+						<a href='#'><i style='color: #00aced;' class='fa fa-twitter fa-4x'></i></a>
+						<a href='#'><i style='color: #dd4b39;' class='fa fa-google-plus-official fa-4x'></i></a>
+						<a href='#'><i style='color: #cb2027;' class='fa fa-pinterest fa-4x'></i></a>
+						<a href='#'><i style='color: #ff0084;' class='fa fa-flickr fa-4x'></i></a>
+						<a href='#'><i style='color: #32506d;' class='fa fa-tumblr fa-4x'></i></a>
+						<a href='#'><i style='color: #bc2a8d;' class='fa fa-instagram fa-4x'></i></a>
+						<a href='#'><i style='color: #007bb6;' class='fa fa-linkedin fa-4x'></i></a>
+					</div>
+					<!--social end-->
 				</div>
 			</div>
 			<!--Sidebar right end-->
