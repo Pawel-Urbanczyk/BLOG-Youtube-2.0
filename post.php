@@ -80,37 +80,18 @@
 		
 			<div class="col-md-8">
 				<div class="post">
-					<h1><a href='post.php' class="post-title">The First Post</a></h1>
+					<h1><a href='#' class="post-title">The First Post</a></h1>
 					
 					<div class="meta small-text"><a href="#">06-06-2017</a> | <a href="#">Pawel Urbanczyk</a> | <a href="#">Technology</a></div>
 					
-					<p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...<a href='post.php'>Continue reading</a></p>
+					<img src='images/img1.jpg' class="img-responsive padding-50">
+					
+					<p class="lead">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
 					<a class="label label-default">What is Technology?</a>
 					<a class="label label-default">How technology works?</a>
 					<a class="label label-default">Intro into the technology</a>
 				</div>
 				
-				<div class="post">
-					<h1><a href='post.php' class="post-title">The Second Post</a></h1>
-					
-					<div class="meta small-text"><a href="#">06-06-2017</a> | <a href="#">Pawel Urbanczyk</a> | <a href="#">Technology</a></div>
-					
-					<p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...<a href='post.php'>Continue reading</a></p>
-					<a class="label label-default">What is Technology?</a>
-					<a class="label label-default">How technology works?</a>
-					<a class="label label-default">Intro into the technology</a>
-				</div>
-				
-				<div class="post">
-					<h1><a href='post.php' class="post-title">The Third Post</a></h1>
-					
-					<div class="meta small-text"><a href="#">06-06-2017</a> | <a href="#">Pawel Urbanczyk</a> | <a href="#">Technology</a></div>
-					
-					<p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...<a href='post.php'>Continue reading</a></p>
-					<a href='post.php' class="label label-default">What is Technology?</a>
-					<a href='post.php' class="label label-default">How technology works?</a>
-					<a href='post.php' class="label label-default">Intro into the technology</a>
-				</div>
 			</div>
 			
 			<!--Sidebar right start-->
@@ -131,7 +112,7 @@
 				</div>
 				
 				<div class="day-post">
-					<h3>The Second Post</h3>
+					<h3><a href='post.php' class="post-title">The Second Post</a></h3>
 					<div class="meta small-text"><a href='#'>06-06-2017</a> | <a href='#'>Technology</a> | <a href='#'>Pawel Urbanczyk</a></div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					<a href='#' class="label label-default">What is Technology</a>
