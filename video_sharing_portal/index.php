@@ -47,8 +47,8 @@
 	<div class='container-fluid'>
 		<div class='row'>
 			<div class='col-md-2'>
-				<div class='page-header' style='margin-top: 2px;'>
-					<h3>Categories</h3>
+				<div class='page-header' style='margin-top: 0;'>
+					<h4>Categories</h4>
 				</div>
 				<div class='vid-sidebar-list'>
 					<a href='#' class='vid-sidebar-list-item'><i class='fa fa-home'></i> Home</a>
@@ -57,7 +57,7 @@
 					<a href='#' class='vid-sidebar-list-item'><i class='fa fa-flask'></i> Science</a>
 				</div>
 				<div class='page-header' style='margin-top: 20px;'>
-					<h3>My account</h3>
+					<h4>My account</h4>
 				</div>
 				<div class='vide-sidebar-list'>
 					<a href='#' class='vid-sidebar-list-item'><i class='fa fa-desktop'></i> My Channel</a>
@@ -67,9 +67,196 @@
 				</div>
 			</div>
 	<!--sidebar end-->
+	<!--Content area start-->
 			<div class='col-md-10'>
-				<div class='jumbotron'></div>
+				<div class='row'>
+				<div class='page-header' style='margin-top: 0;'>
+					<h4>Featured Videos</h4>
+				</div>
+				<!--Featured Video start-->
+					<div class='col-md-6'>
+						<div class='featured-videos'>
+							<a href='#' class='play-button'></a>
+							<img src='../images/img1.jpg' class='img-responsive'>
+							<div class='video-details'>
+								<h3 class=''>How to make a drone?</h3>
+								<div>by: <strong>Techguy</strong></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class='col-md-6'>
+						<div class='featured-videos'>
+							<a href='#' class='play-button'></a>
+							<img src='../images/img2.jpg' class='img-responsive'>
+							<div class='video-details'>
+								<h3 class=''>Is Chillies good for health?</h3>
+								<div>by: <strong>Health & Cure</strong></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Featured Video end-->
+				
+				<!--New Video end-->
+				<div class='row'>
+					<div class='page-header'>
+						<h4>New Videos</h4>
+					</div>
+					<div class='col-md-3'>
+						<div class='new-videos'>
+							<a href='#' class='play-button'></a>
+							<img src='../images/img3.jpg' class='img-responsive'>
+							<div class='new-videos-details'>
+								<h4>Best energy saving Tips</h4>
+								<div class='new-videos-author'>by: <strong>Techguy</strong></div>
+								<div class='new-videos-description'>Here, we're getting the best tips for energy saving</div>
+							</div>
+						</div>
+					</div>
+					<div class='col-md-3'>
+						<div class='new-videos'>
+							<a href='#' class='play-button'></a>
+							<img src='../images/img3.jpg' class='img-responsive'>
+							<div class='new-videos-details'>
+								<h4>Best energy saving Tips</h4>
+								<div class='new-videos-author'>by: <strong>Techguy</strong></div>
+								<div class='new-videos-description'>Here, we're getting the best tips for energy saving</div>
+							</div>
+						</div>
+					</div>
+					<div class='col-md-3'>
+						<div class='new-videos'>
+							<a href='#' class='play-button'></a>
+							<img src='../images/img3.jpg' class='img-responsive'>
+							<div class='new-videos-details'>
+								<h4>Best energy saving Tips</h4>
+								<div class='new-videos-author'>by: <strong>Techguy</strong></div>
+								<div class='new-videos-description'>Here, we're getting the best tips for energy saving</div>
+							</div>
+						</div>
+					</div>
+					<div class='col-md-3'>
+						<div class='new-videos'>
+							<a href='#' class='play-button'></a>
+							<img src='../images/img3.jpg' class='img-responsive'>
+							<div class='new-videos-details'>
+								<h4>Best energy saving Tips</h4>
+								<div class='new-videos-author'>by: <strong>Techguy</strong></div>
+								<div class='new-videos-description'>Here, we're getting the best tips for energy saving</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--New Video end-->
+				
+				<!--Trending Videos start-->
+				<div class='row'>
+					<div class='page-header'>
+						<h4>Trending Videos</h4>
+					</div>
+					
+					<div class='col-md-3'>
+						<div class='new-videos'>
+							<a href='#' class='play-button'></a>
+							<img src='../images/img3.jpg' class='img-responsive'>
+							<div class='new-videos-details'>
+								<h4>Best energy saving Tips</h4>
+								<div class='new-videos-author'>by: <strong>Techguy</strong></div>
+								<div class='new-videos-description'>Here, we're getting the best tips for energy saving</div>
+							</div>
+						</div>
+					</div>
+					<div class='col-md-3'>
+						<div class='new-videos'>
+							<a href='#' class='play-button'></a>
+							<img src='../images/img3.jpg' class='img-responsive'>
+							<div class='new-videos-details'>
+								<h4>Best energy saving Tips</h4>
+								<div class='new-videos-author'>by: <strong>Techguy</strong></div>
+								<div class='new-videos-description'>Here, we're getting the best tips for energy saving</div>
+							</div>
+						</div>
+					</div>
+					<div class='col-md-3'>
+						<div class='new-videos'>
+							<a href='#' class='play-button'></a>
+							<img src='../images/img3.jpg' class='img-responsive'>
+							<div class='new-videos-details'>
+								<h4>Best energy saving Tips</h4>
+								<div class='new-videos-author'>by: <strong>Techguy</strong></div>
+								<div class='new-videos-description'>Here, we're getting the best tips for energy saving</div>
+							</div>
+						</div>
+					</div>	
+					<div class='col-md-3'>
+						<div class='new-videos'>
+							<a href='#' class='play-button'></a>
+							<img src='../images/img3.jpg' class='img-responsive'>
+							<div class='new-videos-details'>
+								<h4>Best energy saving Tips</h4>
+								<div class='new-videos-author'>by: <strong>Techguy</strong></div>
+								<div class='new-videos-description'>Here, we're getting the best tips for energy saving</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Trending Videos end-->
+				
+				<!--Channel You Liked start-->
+				<div class='row'>
+					<div class='page-header'>
+						<h4>Techguy Videos</h4>
+					</div>
+					
+					<div class='col-md-3'>
+						<div class='new-videos'>
+							<a href='#' class='play-button'></a>
+							<img src='../images/img3.jpg' class='img-responsive'>
+							<div class='new-videos-details'>
+								<h4>Best energy saving Tips</h4>
+								<div class='new-videos-author'>by: <strong>Techguy</strong></div>
+								<div class='new-videos-description'>Here, we're getting the best tips for energy saving</div>
+							</div>
+						</div>
+					</div>
+					<div class='col-md-3'>
+						<div class='new-videos'>
+							<a href='#' class='play-button'></a>
+							<img src='../images/img3.jpg' class='img-responsive'>
+							<div class='new-videos-details'>
+								<h4>Best energy saving Tips</h4>
+								<div class='new-videos-author'>by: <strong>Techguy</strong></div>
+								<div class='new-videos-description'>Here, we're getting the best tips for energy saving</div>
+							</div>
+						</div>
+					</div>
+					<div class='col-md-3'>
+						<div class='new-videos'>
+							<a href='#' class='play-button'></a>
+							<img src='../images/img3.jpg' class='img-responsive'>
+							<div class='new-videos-details'>
+								<h4>Best energy saving Tips</h4>
+								<div class='new-videos-author'>by: <strong>Techguy</strong></div>
+								<div class='new-videos-description'>Here, we're getting the best tips for energy saving</div>
+							</div>
+						</div>
+					</div>	
+					<div class='col-md-3'>
+						<div class='new-videos'>
+							<a href='#' class='play-button'></a>
+							<img src='../images/img3.jpg' class='img-responsive'>
+							<div class='new-videos-details'>
+								<h4>Best energy saving Tips</h4>
+								<div class='new-videos-author'>by: <strong>Techguy</strong></div>
+								<div class='new-videos-description'>Here, we're getting the best tips for energy saving</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Channel You Liked end-->
 			</div>
+	<!--Content area end-->
 		</div>
 	</div>
 	
