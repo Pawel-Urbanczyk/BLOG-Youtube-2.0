@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pl">
 	<head>
 		<title>Youtube 2.0</title>
@@ -32,15 +33,7 @@
 	<!--Navbar end-->
 	
 	<!--second navbar start-->
-	<nav class='navbar second-bar' style='margin-top: 0px;'>
-		<div class='container'>
-			<ul class='nav navbar-nav navbar-right'>
-				<li><a href='#'>Upload</a></li>
-				<li><a href='#'>Sign In</a></li>
-				<li><a href='#'>Join</a></li>
-			</ul>
-		</div>
-	</nav>
+		<?php include 'includes/video-nav.php';?>
 	<!--second navbar end-->
 	
 	<!--sidebar start-->
@@ -76,7 +69,7 @@
 				<!--Featured Video start-->
 					<div class='col-md-6'>
 						<div class='featured-videos'>
-							<a href='#' class='play-button'></a>
+							<a href='player.php' class='play-button'></a>
 							<img src='../images/img1.jpg' class='img-responsive'>
 							<div class='video-details'>
 								<h3 class=''>How to make a drone?</h3>
