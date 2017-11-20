@@ -4,6 +4,9 @@
 .padding-50{
 	padding: 50px;
 }
+.margin-20{
+	margin: 20px;
+}
 .btn-square{
 	border-radius: 0;
 	padding-left: 40px;
@@ -191,5 +194,26 @@ header{
 }
 .video-description{
 	padding: 0px 20px 20px 20px;
+	
+}
+
+.video-description p {
+	color: #656565;
+	line-height: 20px;
+}
+.sidebar-videos{
+	margin-bottom: 20px;
+	border-bottom: 1px solid gray;
+}
+.sidebar-videos a {
+	color: black;	
+	transition: .3s color;
+}
+.sidebar-videos a:hover{
+	color: #0f74bc;
+	text-decoration: none;
+}
+.sidebar-videos-title{
+	margin: 0;
 	
 }
