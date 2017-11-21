@@ -21,7 +21,7 @@
 		<!--Latest compiled and minified JavaScript-->
 		<script src="../js/bootstrap.js"></script>
 		
-		
+
 	<!--Bootstrap links end-->
 		
 		
@@ -48,6 +48,13 @@
 			<!--blog nav end-->
 		
 			<div class="col-md-8">
+                <?php
+                   // $sql = "SELECT * FROM blog_data";
+                  //  $run = mysqli_query($conn,$sql);
+                  //  while($rows = mysqli_fetch_assoc($run)){
+
+                    }
+                ?>
 				<div class="post">
 					<h1><a href='post.php' class="post-title">The First Post</a></h1>
 					
