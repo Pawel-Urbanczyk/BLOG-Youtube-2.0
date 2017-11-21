@@ -57,7 +57,7 @@
                        $blog_description = substr($rows['blog_description'],0,200);
                         ?>
                         <div class="post">
-                            <h1><a href='post.php' class="post-title"><?php echo($blog_title);?></a></h1>
+                          <?php  echo"<h1><a href='post.php?post_id=$rows[blog_id]' class='post-title'>$blog_title</a></h1>";?>
 
                             <div class="meta small-text"><a href="#"><?php echo($rows['blog_date']);?></a> | <a href="#"><?php echo($rows['blog_author']);?></a> | <a                                           href="#"><?php echo($rows['blog_category']);?></a></div>
 
