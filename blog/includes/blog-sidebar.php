@@ -1,4 +1,4 @@
-		<!--Sidebar right start-->
+	<!--Sidebar right start-->
 			<div class="col-md-4">
 			<div class='row'>
 						<!--header-->
@@ -7,9 +7,13 @@
 					</div>
 					<!--Lates post-->
 					<div class="custom-sidebar-list">
-							<a href="post.php" class="custom-sidebar-list-item">First post</a>
-							<a href="post.php" class="custom-sidebar-list-item">Second post</a>
-							<a href="post.php" class="custom-sidebar-list-item">Third post</a>
+                        <?php
+                            $side_sql = "SELECT * FROM blog_data ORDER BY blog_id DESC LIMIT 6";
+                            $side_run = mysqli_query($conn, $side_sql);
+                            while($side_rows = mysqli_fetch_assoc($side_run)){ ?>
+                                <a href="post.php" class="custom-sidebar-list-item"><?php echo(ucwords($side_rows['blog_title']));?></a>
+                        <?php }
+                        ?>
 					</div>
 					
 			</div>

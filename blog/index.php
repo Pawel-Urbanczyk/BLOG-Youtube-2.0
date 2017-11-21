@@ -1,3 +1,4 @@
+<?php include 'includes/db.php';?>
 <html lang="pl">
 	<head>
 		<title>Youtube 2.0</title>
@@ -49,46 +50,26 @@
 		
 			<div class="col-md-8">
                 <?php
-                   // $sql = "SELECT * FROM blog_data";
-                  //  $run = mysqli_query($conn,$sql);
-                  //  while($rows = mysqli_fetch_assoc($run)){
+                    $sql = "SELECT * FROM blog_data ORDER BY blog_id DESC LIMIT 2";
+                    $run = mysqli_query($conn,$sql);
+                    while($rows = mysqli_fetch_assoc($run)){
+                       $blog_title = ucwords($rows['blog_title']);
+                       $blog_description = substr($rows['blog_description'],0,200);
+                        ?>
+                        <div class="post">
+                            <h1><a href='post.php' class="post-title"><?php echo($blog_title);?></a></h1>
 
-                    }
+                            <div class="meta small-text"><a href="#"><?php echo($rows['blog_date']);?></a> | <a href="#"><?php echo($rows['blog_author']);?></a> | <a                                           href="#"><?php echo($rows['blog_category']);?></a></div>
+
+                            <p class="lead"><?php echo($blog_description);?>... <a href='post.php'>Continue reading</a></p>
+                            <a class="label label-default">What is Technology?</a>
+                            <a class="label label-default">How technology works?</a>
+                            <a class="label label-default">Intro into the technology</a>
+                        </div>
+                  <?php  }
                 ?>
-				<div class="post">
-					<h1><a href='post.php' class="post-title">The First Post</a></h1>
-					
-					<div class="meta small-text"><a href="#">06-06-2017</a> | <a href="#">Pawel Urbanczyk</a> | <a href="#">Technology</a></div>
-					
-					<p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...<a href='post.php'>Continue reading</a></p>
-					<a class="label label-default">What is Technology?</a>
-					<a class="label label-default">How technology works?</a>
-					<a class="label label-default">Intro into the technology</a>
-				</div>
-				
-				<div class="post">
-					<h1><a href='post.php' class="post-title">The Second Post</a></h1>
-					
-					<div class="meta small-text"><a href="#">06-06-2017</a> | <a href="#">Pawel Urbanczyk</a> | <a href="#">Technology</a></div>
-					
-					<p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...<a href='post.php'>Continue reading</a></p>
-					<a class="label label-default">What is Technology?</a>
-					<a class="label label-default">How technology works?</a>
-					<a class="label label-default">Intro into the technology</a>
-				</div>
-				
-				<div class="post">
-					<h1><a href='post.php' class="post-title">The Third Post</a></h1>
-					
-					<div class="meta small-text"><a href="#">06-06-2017</a> | <a href="#">Pawel Urbanczyk</a> | <a href="#">Technology</a></div>
-					
-					<p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...<a href='post.php'>Continue reading</a></p>
-					<a href='post.php' class="label label-default">What is Technology?</a>
-					<a href='post.php' class="label label-default">How technology works?</a>
-					<a href='post.php' class="label label-default">Intro into the technology</a>
-				</div>
-			</div>
-			
+
+            </div>
 			<!--Sidebar right start-->
 				<?php include "/includes/blog-sidebar.php";?>
 			<!--Sidebar right end-->
