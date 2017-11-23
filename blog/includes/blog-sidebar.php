@@ -11,7 +11,7 @@
                             $side_sql = "SELECT * FROM blog_data ORDER BY blog_id DESC LIMIT 6";
                             $side_run = mysqli_query($conn, $side_sql);
                             while($side_rows = mysqli_fetch_assoc($side_run)){ ?>
-                                <a href="post.php" class="custom-sidebar-list-item"><?php echo(ucwords($side_rows['blog_title']));?></a>
+                                <a href="post.php?post_id=<?php echo $side_rows['blog_id'];?>" class="custom-sidebar-list-item"><?php echo(ucwords($side_rows['blog_title']));?></a>
                         <?php }
                         ?>
 					</div>

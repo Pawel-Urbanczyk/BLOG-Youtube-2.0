@@ -50,16 +50,24 @@
 		
 			<div class="col-md-8">
                 <?php
-                    $sql = "SELECT * FROM blog_data ORDER BY blog_id DESC LIMIT 2";
+                    $sql = "SELECT * FROM blog_data ORDER BY blog_id DESC LIMIT 3";
                     $run = mysqli_query($conn,$sql);
                     while($rows = mysqli_fetch_assoc($run)){
                        $blog_title = ucwords($rows['blog_title']);
                        $blog_description = substr($rows['blog_description'],0,200);
+
+                       $blog_category = $rows['blog_category'];
+                       $cat_sql = "SELECT * FROM categories WHERE cat_id = '$blog_category'";
+                       $cat_run = mysqli_query($conn, $cat_sql);
+                       while($cat_row = mysqli_fetch_assoc($cat_run)){
+                           $category = ucwords($cat_row['cat_data']);
+                       }
+
                         ?>
                         <div class="post">
                           <?php  echo"<h1><a href='post.php?post_id=$rows[blog_id]' class='post-title'>$blog_title</a></h1>";?>
 
-                            <div class="meta small-text"><a href="#"><?php echo($rows['blog_date']);?></a> | <a href="#"><?php echo($rows['blog_author']);?></a> | <a                                           href="#"><?php echo($rows['blog_category']);?></a></div>
+                            <div class="meta small-text"><a href="#"><?php echo($rows['blog_date']);?></a> | <a href="#"><?php echo($rows['blog_author']);?></a> | <a                                           href="#"><?php echo $category;?></a></div>
 
                             <p class="lead"><?php echo($blog_description);?>... <a href='post.php'>Continue reading</a></p>
                             <a class="label label-default">What is Technology?</a>
