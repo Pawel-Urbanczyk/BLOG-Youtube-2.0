@@ -53,13 +53,19 @@
                     <?php
 
                     if(isset($_GET['post_id'])){
-                        $sql = "SELECT * FROM blog_data WHERE blog_id = '$_GET[post_id]'";
+                        $sql = "SELECT * FROM blog_data WHERE blog_id = $_GET[post_id]";
                         $run = mysqli_query($conn, $sql);
                         while($rows = mysqli_fetch_assoc($run)){
                             $blog_title = ucwords($rows['blog_title']);
+                            $cat_sql = "SELECT * FROM categories WHERE cat_id = $rows[blog_category]";
+                            $cat_run = mysqli_query($conn, $cat_sql);
+                            while($cat_rows = mysqli_fetch_assoc($cat_run)){
+                               $cat_data = ucwords($cat_rows['cat_data']);
+                               $cat_id = $cat_rows['cat_id'];
+                            }
                             echo"
                                     <h1><a href='#' class='post-title'>$blog_title</a></h1>
-                                    <div class='meta small-text\'><a href='#'>$rows[blog_date]</a> | <a href='#'>$rows[blog_author]</a> | <a                                                                        href='#'>$rows[blog_category]</a></div>
+                                    <div class='meta small-text\'><a href='#'>$rows[blog_date]</a> | <a href='#'>$rows[blog_author]</a> | <a                                                                        href='menu.php?cat_id=$cat_id'>$cat_data</a></div>
                                     <img src='../images/img1.jpg' class='img-responsive padding-50'>
                                     <p class='lead'>$rows[blog_description]</p>
                                     <a class='label label-default'>What is Technology?</a>

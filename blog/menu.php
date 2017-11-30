@@ -64,15 +64,16 @@
             $cat_run = mysqli_query($conn, $cat_sql);
             while($cat_row = mysqli_fetch_assoc($cat_run)){
                 $category = ucwords($cat_row['cat_data']);
+                $cat_id = $cat_row['cat_id'];
             }
 
             ?>
             <div class="post">
                 <?php  echo"<h1><a href='post.php?post_id=$rows[blog_id]' class='post-title'>$blog_title</a></h1>";?>
 
-                <div class="meta small-text"><a href="#"><?php echo($rows['blog_date']);?></a> | <a href="#"><?php echo($rows['blog_author']);?></a> | <a                                           href="#"><?php echo $category;?></a></div>
+                <div class="meta small-text"><a href="#"><?php echo($rows['blog_date']);?></a> | <a href="#"><?php echo($rows['blog_author']);?></a> | <a                                           href="menu.php?cat_id=<?php echo $cat_id;?>"><?php echo $category;?></a></div>
 
-                <p class="lead"><?php echo($blog_description);?>... <a href='post.php'>Continue reading</a></p>
+                <p class="lead"><?php echo($blog_description);?>... <a href='post.php?post_id=<?php echo $rows['blog_id'];?>'>Continue reading</a></p>
                 <a class="label label-default">What is Technology?</a>
                 <a class="label label-default">How technology works?</a>
                 <a class="label label-default">Intro into the technology</a>
