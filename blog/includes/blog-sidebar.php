@@ -46,7 +46,7 @@
 						
 						<!--Data-->
 						<div class="col-md-8">
-							<a href='#' class="lead">Profile page</a><br>
+							<a href='profile.php' class="lead">Profile page</a><br>
 							<a href='#' class="lead">Website address</a><br>
 							<a href='#' class="lead">Official Email</a><br>
 						</div>
