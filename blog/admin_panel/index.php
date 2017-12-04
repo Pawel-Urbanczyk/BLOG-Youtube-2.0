@@ -1,4 +1,12 @@
-<?php include '../includes/db.php';?>
+<?php include '../includes/db.php';
+    if(isset($_GET['del_id'])){
+        $del_id = $_GET['del_id'];
+        $del_sql = "DELETE  FROM blog_data WHERE blog_id = '$del_id'";
+        if(mysqli_query($conn, $del_sql)){?>
+            <script>window.location = 'index.php';</script>
+        <?php  }
+    }
+?>
 <html lang="pl">
 <head>
     <title>Admin Panel</title>
@@ -9,8 +17,6 @@
 
     <!--Bootstrap links start-->
 
-    <!--jQuery-->
-    <script	src="../js/jquery.js"></script>
 
     <!--Latest compiled and minified CSS-->
     <link rel="stylesheet" href="../../css/bootstrap.css">
@@ -19,8 +25,10 @@
     <!--font awesome-->
     <link rel="stylesheet" href="../../css/font-awesome.css">
 
+    <!--jQuery-->
+    <script	src="../../js/jquery.js"></script>
     <!--Latest compiled and minified JavaScript-->
-    <script src="../js/bootstrap.js"></script>
+    <script src="../../js/bootstrap.js"></script>
 
 
     <!--Bootstrap links end-->
@@ -54,23 +62,41 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>ggg</td>
-                    <td>ggg</td>
-                    <td>ggg</td>
-                    <td>ggg</td>
-                    <td>ggg</td>
-                    <td>
-                        <div class='dropdown'>
-                            <button class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Actions <span class='caret'></span></button>
-                            <ul class='dropdown-menu'>
-                                <li><a href='#'>Edit</a></li>
-                                <li><a href='#'>Delete</a></li>
-                                <li><a href='#'>View</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
+            <?php
+                $sql = "SELECT * FROM  blog_data";
+                $run = mysqli_query($conn,$sql);
+                while($rows=mysqli_fetch_assoc($run)){
+                    $blog_title = ucwords($rows['blog_title']);
+                    $blog_description = substr($rows['blog_description'], 0, 100);
+
+                    $cat_sql= "SELECT * FROM categories WHERE cat_id = '$rows[blog_category]'";
+                    $cat_run = mysqli_query($conn, $cat_sql);
+                    while($cat_rows = mysqli_fetch_assoc($cat_run)){
+                       $cat_data = ucwords($cat_rows['cat_data']);
+                    }
+                    echo"
+                        <tr>
+                            <td>$rows[blog_id]</td>
+                            <td>$blog_title</td>
+                            <td>$blog_description</td>
+                            <td>$rows[blog_author]</td>
+                            <td>$cat_data</td>
+                            <td>
+                                <div class='dropdown'>
+                                    <button class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Actions <span class='caret'></span></button>
+                                    <ul class='dropdown-menu'>
+                                        <li><a href='#'>Edit</a></li>
+                                        <li><a href='index.php?del_id=$rows[blog_id]'>Delete</a></li>
+                                        <li><a href='../post.php?post_id=$rows[blog_id]'>View</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    ";
+                }
+
+            ?>
+
             </tbody>
         </table>
     </div>
